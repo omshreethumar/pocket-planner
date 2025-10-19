@@ -8,8 +8,9 @@ An AI-based finance coach for irregular income using React, FastAPI, and ML fore
 https://pocket-planner.vercel.app
 
 ## Team
-Omshree Thumar — Frontend & Design
-(Your teammate names here)
+Omshree Thumar — backend 
+yatrik dhameliya - frontend
+parth modi- design and research
 
 ## How to Run
 npm install
