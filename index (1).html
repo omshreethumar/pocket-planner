@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PocketPlanner Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>PocketPlanner 💸</h2>
+    <ul>
+      <li class="active">🏠 Overview</li>
+      <li>📊 Insights</li>
+      <li>📅 Transactions</li>
+      <li>⚙️ Settings</li>
+    </ul>
+  </aside>
+
+  <!-- Main Dashboard -->
+  <main class="main">
+    <!-- Header -->
+    <header>
+      <h1>Dashboard</h1>
+      <div class="profile">
+        <img src="https://img.icons8.com/color/96/administrator-male.png" alt="User">
+        <span>Welcome, User</span>
+      </div>
+    </header>
+
+    <!-- Summary Cards -->
+    <section class="cards">
+      <div class="card">
+        <h3>💰 Total Balance</h3>
+        <p id="balance">₹34,500</p>
+      </div>
+      <div class="card">
+        <h3>📥 Income</h3>
+        <p id="income">₹12,000</p>
+      </div>
+      <div class="card">
+        <h3>📤 Expense</h3>
+        <p id="expense">₹8,500</p>
+      </div>
+      <div class="card">
+        <h3>💸 Safe to Spend</h3>
+        <p id="safe">₹1,200</p>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="chart-section">
+      <h2>📊 Monthly Cash Flow</h2>
+      <canvas id="myChart"></canvas>
+    </section>
+
+    <!-- Transaction Highlights -->
+    <section class="transactions">
+      <h2>🧾 Transaction Highlights</h2>
+      <div class="transaction-list">
+        <div class="t-item">
+          <span>🛒 Groceries</span>
+          <span>- ₹1,200</span>
+        </div>
+        <div class="t-item">
+          <span>💼 Salary</span>
+          <span>+ ₹12,000</span>
+        </div>
+        <div class="t-item">
+          <span>🚕 Travel</span>
+          <span>- ₹800</span>
+        </div>
+        <div class="t-item">
+          <span>☕ Cafe</span>
+          <span>- ₹250</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smart Tips -->
+    <section class="tips">
+      <h2>🤖 Smart Budget Tips</h2>
+      <ul>
+        <li>✅ Move ₹300 to Emergency Jar this week.</li>
+        <li>📉 You spent 10% less this month — keep it up!</li>
+        <li>⚠️ Upcoming EMI on 25th — plan ahead.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
