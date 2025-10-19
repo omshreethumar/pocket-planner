@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PocketPlanner | Advanced Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light">
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <h1 class="logo">PocketPlanner💰</h1>
+    <ul class="nav-links">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#transactions">Transactions</a></li>
+      <li><a href="#tips">Tips</a></li>
+    </ul>
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+  </nav>
+</header>
+
+<!-- Dashboard -->
+<section id="dashboard" class="dashboard">
+  <h2>📊 Dashboard Overview</h2>
+  <div class="cards">
+    <div class="card"><h3>Balance</h3><p id="balance">₹0</p></div>
+    <div class="card"><h3>Income</h3><p id="income">₹0</p></div>
+    <div class="card"><h3>Expense</h3><p id="expense">₹0</p></div>
+    <div class="card"><h3>Safe to Spend</h3><p id="safe">₹0</p></div>
+  </div>
+
+  <!-- Charts -->
+  <div class="chart-container">
+    <canvas id="cashflowChart"></canvas>
+    <canvas id="expenseChart" style="margin-top:30px;"></canvas>
+  </div>
+
+  <!-- Savings Jars -->
+  <div class="savings-jars">
+    <h2>💰 Savings Jars</h2>
+    <div id="savings-container"></div>
+  </div>
+</section>
+
+<!-- Transactions -->
+<section id="transactions" class="transactions">
+  <h2>📝 Transactions</h2>
+  <form id="transaction-form">
+    <input type="text" id="desc" placeholder="Description" required>
+    <input type="number" id="amount" placeholder="Amount (₹)" required>
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <select id="category">
+      <option value="General">General</option>
+      <option value="Dining">Dining</option>
+      <option value="Transport">Transport</option>
+      <option value="Bills">Bills</option>
+      <option value="Shopping">Shopping</option>
+    </select>
+    <button type="submit">Add Transaction</button>
+  </form>
+  <input type="text" id="search" placeholder="Search transaction..." class="search">
+  <div id="transaction-list" class="transaction-list"></div>
+</section>
+
+<!-- AI Tips -->
+<section id="tips" class="tips">
+  <h2>🤖 Smart Tips</h2>
+  <ul id="tips-list"></ul>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 PocketPlanner | Your smart finance companion</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
