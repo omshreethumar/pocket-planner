@@ -13,3 +13,4 @@ parth modi- design and research
 ## How to Run
 npm install
 npm start
+<img width="1420" height="4896" alt="_E__Pocket%20planner_Project_project1_index html (1)" src="https://github.com/user-attachments/assets/3b29bba0-dd2f-4f91-8d32-f5179c751558" />
